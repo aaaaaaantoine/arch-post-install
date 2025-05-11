@@ -54,7 +54,7 @@ virtualbox \
 yakuake
 
 # Polices d'écriture
-sudo pacman -S --noconfirm \
+sudo pacman -S --noconfirm --needed \
 nerd-fonts \
 ttf-bitstream-vera \
 ttf-dejavu \
