@@ -23,6 +23,7 @@ sudo pacman -Su
 
 # Installation de KDE Plasma
 sudo pacman -S --noconfirm \
+bash-completion \
 calligra \
 calligraplan \
 digikam \
@@ -46,7 +47,6 @@ krita \
 ksystemlog \
 ktorrent \
 kwave \
-openssh \
 partitionmanager \
 vim \
 virtualbox \
