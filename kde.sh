@@ -21,6 +21,7 @@ sudo pacman -Su --noconfirm
 
 # Installation de KDE Plasma
 sudo pacman -S --noconfirm \
+akregator \
 bash-completion \
 calligra \
 calligra-plan \
@@ -32,6 +33,8 @@ firefox-i18n-fr \
 firewalld \
 ghostwriter \
 gwenview \
+kaccounts-providers \
+kcalc \
 kcolorchooser \
 kdeconnect \
 kdenlive \
@@ -45,6 +48,7 @@ krita \
 ksystemlog \
 ktorrent \
 kwave \
+okular \
 partitionmanager \
 virtualbox \
 yakuake
@@ -60,7 +64,7 @@ ttf-liberation
 sudo gpasswd -a $USER vboxusers
 
 # Services Systemd
-sudo systemctl enable --now avahi-daemon avahi-dnsconfd bluetooth ssh
+sudo systemctl enable --now avahi-daemon avahi-dnsconfd bluetooth sshd
 #sudo systemctl enable --now firewalld
 
 echo "Le script post-installation est terminé, veuillez redémarrer le système"
