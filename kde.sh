@@ -11,7 +11,7 @@ echo "-----------------------------------------------"
 sudo sed -i 's/#VerbosePkgLists/VerbosePkgLists/' /etc/pacman.conf
 
 # Installation de Reflector
-sudo pacman -Sy reflector rsync
+sudo pacman -Sy --noconfirm --needed reflector rsync
 
 # Détecter les mirroirs les plus rapide
 sudo reflector \
@@ -21,15 +21,15 @@ sudo reflector \
 --latest 5
 
 # Mise à jour du système
-sudo pacman -Su
+sudo pacman -Su --noconfirm
 
 # Installation de KDE Plasma
-sudo pacman -S \
+sudo pacman -S --noconfirm \
 bash-completion \
 calligra \
-calligraplan \
+calligra-plan \
 digikam \
-dragonplayer \
+dragon \
 elisa \
 firefox \
 firefox-i18n-fr \
@@ -38,8 +38,7 @@ gwenview \
 kcolorchooser \
 kdeconnect \
 kdenlive \
-kdevelop \
-kdevelop-l10n \
+kdevelop-meta \
 kexi \
 kid3 \
 kodi \
@@ -50,7 +49,6 @@ ksystemlog \
 ktorrent \
 kwave \
 partitionmanager \
-vim \
 virtualbox \
 yakuake
 
