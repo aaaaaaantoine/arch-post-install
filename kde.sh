@@ -31,6 +31,7 @@ dragonplayer \
 elisa \
 firefox \
 firefox-i18n-fr \
+gwenview \
 kate \
 kcal \
 kcolorchooser \
@@ -41,7 +42,6 @@ kdevelop-l10n \
 kexi \
 kid3 \
 kodi \
-konsole \
 kontact \
 konversation \
 krita \
@@ -49,9 +49,6 @@ ksystemlog \
 ktorrent \
 kwave \
 partitionmanager \
-plasma \
-plasma-firewall \
-plasma-vault \
 ufw \
 vim \
 virtualbox \
