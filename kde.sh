@@ -20,7 +20,7 @@ sudo reflector --save /etc/pacman.d/mirrorlist --country France --sort rate --pr
 sudo pacman -Su --noconfirm
 
 # Installation de KDE Plasma
-sudo pacman -S --noconfirm \
+sudo pacman -S --noconfirm --needed \
 akregator \
 bash-completion \
 calligra \
