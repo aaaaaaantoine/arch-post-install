@@ -19,7 +19,7 @@
  
 ## 📍 Aperçu
 
-Ce dépôt contient plusieurs scripts bash simple pour installer des logiciels après une installation Archlinux KDE Minimale.
+Ce dépôt contient plusieurs scripts bash simple pour installer des logiciels après une installation [Archlinux](https://archlinux.org/download/) KDE Minimale depuis les script ArchInstall.
 
 ---
 
