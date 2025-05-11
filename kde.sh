@@ -22,7 +22,7 @@ sudo reflector \
 sudo pacman -Su
 
 # Installation de KDE Plasma
-sudo pacman -S --noconfirm \
+sudo pacman -S \
 bash-completion \
 calligra \
 calligraplan \
