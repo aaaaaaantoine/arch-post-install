@@ -17,8 +17,9 @@ sudo pacman -Sy --noconfirm --needed reflector rsync
 sudo reflector \
 --save /etc/pacman.d/mirrorlist \
 --country France,Germany \
+--sort rate \
 --protocol https \
---latest 5
+--latest 10
 
 # Mise à jour du système
 sudo pacman -Su --noconfirm
