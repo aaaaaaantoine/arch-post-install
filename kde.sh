@@ -30,6 +30,7 @@ elisa \
 firefox \
 firefox-i18n-fr \
 firewalld \
+ghostwriter \
 gwenview \
 kcolorchooser \
 kdeconnect \
