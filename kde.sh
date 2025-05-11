@@ -28,6 +28,7 @@ calligra-plan \
 digikam \
 dragon \
 elisa \
+eza \
 firefox \
 firefox-i18n-fr \
 firewalld \
