@@ -14,12 +14,7 @@ sudo sed -i 's/#VerbosePkgLists/VerbosePkgLists/' /etc/pacman.conf
 sudo pacman -Sy --noconfirm --needed reflector rsync
 
 # Détecter les mirroirs les plus rapide
-sudo reflector \
---save /etc/pacman.d/mirrorlist \
---country France,Germany \
---sort rate \
---protocol https \
---latest 10
+sudo reflector --save /etc/pacman.d/mirrorlist --country France --sort rate --protocol http --latest 5 --verbose
 
 # Mise à jour du système
 sudo pacman -Su --noconfirm
