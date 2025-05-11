@@ -21,9 +21,8 @@ sudo reflector \
 # Mise à jour du système
 sudo pacman -Su
 
-# Installation de mes utilitaires pour KDE Plasma
+# Installation de KDE Plasma
 sudo pacman -S --noconfirm \
-ark \
 calligra \
 calligraplan \
 digikam \
@@ -31,9 +30,8 @@ dragonplayer \
 elisa \
 firefox \
 firefox-i18n-fr \
+firewalld \
 gwenview \
-kate \
-kcal \
 kcolorchooser \
 kdeconnect \
 kdenlive \
@@ -48,13 +46,24 @@ krita \
 ksystemlog \
 ktorrent \
 kwave \
+openssh \
 partitionmanager \
-ufw \
 vim \
 virtualbox \
 yakuake
 
+# Polices d'écriture
+sudo pacman -S --noconfirm \
+nerd-fonts \
+ttf-bitstream-vera \
+ttf-dejavu \
+ttf-liberation 
+
 # VirtualBox
 sudo gpasswd -a $USER vboxusers
+
+# Services Systemd
+sudo systemctl enable --now avahi-daemon avahi-dnsconfd bluetooth ssh
+#sudo systemctl enable --now firewalld
 
 echo "Le script post-installation est terminé, veuillez redémarrer le système"
