@@ -8,6 +8,8 @@ echo "-----------------------------------------------"
 echo "Script Archlinux à usage général"
 echo "-----------------------------------------------"
 
+sudo sed -i 's/#VerbosePkgLists/VerbosePkgLists/' /etc/pacman.conf
+
 # Installation de Reflector
 sudo pacman -Sy reflector rsync
 
