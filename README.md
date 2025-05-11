@@ -58,7 +58,7 @@ Ce dépôt contient un script bash simple pour installer des logiciels après un
 Vérifiez que le paquet curl soit bien installé sur votre système.
 
 ```sh
-sudo pacman -Sy curl
+sudo pacman -Sy --noconfirm --needed curl
 ```
 
 ---
