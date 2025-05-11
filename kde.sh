@@ -34,6 +34,7 @@ firewalld \
 ghostwriter \
 gwenview \
 kaccounts-providers \
+kaddressbook \
 kcalc \
 kcolorchooser \
 kdeconnect \
@@ -41,9 +42,11 @@ kdenlive \
 kdevelop-meta \
 kexi \
 kid3 \
+kmail \
 kodi \
 kontact \
 konversation \
+korganizer \
 krita \
 ksystemlog \
 ktorrent \
