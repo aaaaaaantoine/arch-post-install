@@ -2,7 +2,7 @@
 <h1 align="center">
 <br>Archlinux Post Install
 </h1>
-<h3>◦ Développé avec les logiciels et outils ci-dessous.</h3>
+<h3> Développé avec les logiciels et outils ci-dessous.</h3>
 
 <p align="center">
 <img src="https://img.shields.io/badge/GNU%20Bash-4EAA25.svg?style&logo=GNU-Bash&logoColor=white" alt="GNU%20Bash" />
@@ -19,7 +19,7 @@
  
 ## 📍 Aperçu
 
-Ce dépôt contient un script bash simple pour installer des logiciels après une installation [Archlinux](https://archlinux.org/download/) KDE Minimale, avec le script ArchInstall.
+Ce dépôt contient un script bash simple pour installer des logiciels après une installation [Archlinux](https://archlinux.org/download/) KDE Minimale, depui le script ArchInstall.
 
 ---
 
@@ -31,6 +31,7 @@ Ce dépôt contient un script bash simple pour installer des logiciels après un
 * Digikam
 * Elisa
 * Ghostwriter
+* Kaddressbook
 * Kcolorchooser
 * Kdenlive
 * Kdevelop
@@ -39,15 +40,16 @@ Ce dépôt contient un script bash simple pour installer des logiciels après un
 * Kodi
 * Kontact
 * Konversation
+* KOrganizer
 * Krita
-* Ksystemlog
+* KSystemlog
 * Ktorrent
 * Kwave
 * Plasma-firewall
-* Ufw
+* UFW
 * Vim
 * VirtualBox
-* yakuake
+* Yakuake
 
 </details>
 
