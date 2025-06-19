@@ -42,7 +42,14 @@ vim
 ### Logiciels pour suppresion 
 ```sh
 sudo pacman -Rns --noconfirm evince sushi gnome-logs gnome-font-viewer snapshot decibels gnome-maps gnome-characters totem simple-scan
+```
 
+### AUR
+```sh
+sudo pacman -S --noconfirm --needed fakeroot gcc git make
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
 ```
 
 ### Virtualisation Qemu/KVM
