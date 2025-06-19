@@ -40,7 +40,7 @@ vim
 
 ### Virtualisation Qemu/KVM
 ```sh
-sudo pacman -S --noconfirm --needed dnsmasq libvirt openbsd-netcat qemu
+sudo pacman -S --noconfirm --needed dnsmasq libvirt openbsd-netcat qemu virt-manager
 sudo systemctl enable --now libvirtd
 sudo usermod -a -G libvirt antoine
 ```
