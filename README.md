@@ -27,11 +27,12 @@ gnome-builder \
 gnome-calendar \
 gnome-console \
 gnome-music \
+gnome-podcasts \
 gnucash \
 gnumeric \
 git \
 kodi \
-podcast \
+gnome-podcasts \
 secrets \
 shortwave \
 vim 
