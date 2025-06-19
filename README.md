@@ -58,6 +58,7 @@ sudo pacman -S --noconfirm --needed dnsmasq libvirt openbsd-netcat qemu virt-man
 sudo systemctl enable --now libvirtd
 sudo usermod -a -G libvirt antoine
 ```
+
 ### Parefeu
 ```sh
 sudo pacman -S --noconfirm --needed ufw
@@ -68,6 +69,11 @@ sudo ufw enable
 ### Gstreamer
 ```sh
 sudo pacman -S --noconfirm --needed gst-plugins-{bad,base,good,ugly}
+```
+
+### Polices
+```sh
+sudo pacman -S --noconfirm --needed noto-fonts ttf-bitstream-vera ttf-dejavu ttf-liberation
 ```
 
 ### Services SystemD
