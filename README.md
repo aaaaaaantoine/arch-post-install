@@ -56,6 +56,11 @@ sudo ufw enable
 sudo pacman -S --noconfirm --needed gst-plugins-{bad,base,good,ugly}
 ```
 
+### Services SystemD
+```sh
+sudo systemctl enable --now avahi-daemon avahi-dnsconfd bleutooth gdm 
+```
+
 ---
 
 ## Créer une connexion par pont pour les VMs
