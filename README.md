@@ -21,6 +21,7 @@ curl \
 deja-dup \
 eartag \
 epiphany \
+fragments \
 geary \
 gnome \
 gnome-builder \
