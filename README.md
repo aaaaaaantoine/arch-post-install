@@ -78,7 +78,7 @@ sudo pacman -S --noconfirm --needed noto-fonts ttf-bitstream-vera ttf-dejavu ttf
 
 ### Services SystemD
 ```sh
-sudo systemctl enable --now avahi-daemon avahi-dnsconfd bleutooth gdm 
+sudo systemctl enable --now avahi-daemon avahi-dnsconfd bluetooth gdm 
 ```
 
 ---
