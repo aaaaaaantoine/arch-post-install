@@ -42,7 +42,7 @@ vim
 sudo pacman -Rns --noconfirm evince sushi gnome-logs gnome-font-viewer snapshot decibels gnome-maps gnome-characters totem simple-scan
 ```
 
-### KDE Plamsa
+### KDE Plasma
 ```sh
 sudo pacman -S --noconfirm --needed \
 akregator \
