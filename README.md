@@ -94,9 +94,9 @@ makepkg -si
 
 ### Virtualisation Qemu/KVM
 ```sh
-sudo pacman -S --noconfirm --needed dnsmasq libvirt openbsd-netcat qemu virt-manager
+sudo pacman -S --noconfirm --needed dnsmasq libvirt openbsd-netcat qemu
 sudo systemctl enable --now libvirtd
-sudo usermod -a -G libvirt antoine
+sudo usermod -a -G libvirt $USER
 ```
 
 ### Parefeu
