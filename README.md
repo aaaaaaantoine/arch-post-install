@@ -69,7 +69,7 @@ curl \
 dolphin \
 dragon \
 elisa \
-firefox \
+falkon \
 gwenview \
 kaccounts-integration \
 kaccounts-providers \
@@ -80,6 +80,7 @@ kexi \
 kdepim-addons \
 kmail \
 kodi \
+korganizer \
 konsole \
 kontact \
 konversation \
@@ -134,7 +135,7 @@ sudo pacman -S --noconfirm --needed noto-fonts ttf-bitstream-vera ttf-dejavu ttf
 
 ### Services SystemD
 ```sh
-sudo systemctl enable --now avahi-daemon avahi-dnsconfd bluetooth gdm 
+sudo systemctl enable --now avahi-daemon avahi-dnsconfd bluetooth 
 ```
 
 ---
