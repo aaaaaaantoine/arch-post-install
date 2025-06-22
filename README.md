@@ -51,8 +51,6 @@ secrets \
 shortwave \
 vim 
 ```
-
-### Logiciels pour suppresion de GNOME
 ```sh
 sudo pacman -Rns --noconfirm evince sushi gnome-logs gnome-font-viewer snapshot decibels gnome-maps gnome-characters totem simple-scan
 ```
