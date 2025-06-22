@@ -70,6 +70,7 @@ konversation \
 krdc \
 krita \
 ktorrent \
+libvncserver \
 partitionmanager \
 plasma \
 plasma-firewall \
