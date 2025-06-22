@@ -1,4 +1,16 @@
-## Guide Arch Linux GNOME Post Install
+## Guide Arch Linux Post Install
+
+* Mise à jour
+* Reflector
+* GNOME
+* KDE Plasma
+* AUR
+* Virtualisation Qemu/KVM
+* Parefeu
+* Gstreamer
+* 
+
+---
 
 ### Mise à jour du système
 ```sh
@@ -10,6 +22,7 @@ sudo pacman -Syyu bash-completion --noconfirm --needed
 sudo pacman -S reflector rsync --noconfirm --needed
 sudo reflector --sort rate --save /etc/pacman.d/mirrorlist --country France --protocol https --latest 5 --verbose
 ```
+---
 
 ### Installation de l'environnement GNOME
 ```sh
@@ -39,10 +52,53 @@ shortwave \
 vim 
 ```
 
-### Logiciels pour suppresion 
+### Logiciels pour suppresion de GNOME
 ```sh
 sudo pacman -Rns --noconfirm evince sushi gnome-logs gnome-font-viewer snapshot decibels gnome-maps gnome-characters totem simple-scan
 ```
+
+---
+
+### KDE Plamsa
+```sh
+sudo pacman -S --noconfirm --needed \
+akregator \
+ark \
+calligra \
+curl \
+dolphin \
+dragon \
+elisa \
+firefox \
+gwenview \
+kaccounts-integration \
+kaccounts-providers \
+kaddressbook \
+kcalc \
+kdevelop-meta \
+kexi \
+kdepim-addons \
+kmail \
+kodi \
+konsole \
+kontact \
+konversation \
+krdc \
+krita \
+ktorrent \
+partitionmanager \
+plasma \
+plasma-firewall \
+sddm \
+vim \
+virt-manager \
+yakuake
+```
+
+```sh
+sudo systemctl enable --now sddm
+```
+---
 
 ### AUR
 ```sh
