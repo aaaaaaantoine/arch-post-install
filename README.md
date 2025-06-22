@@ -1,18 +1,6 @@
 ## Guide Arch Linux Post Install
 
-* Mise à jour
-* Reflector
-* GNOME
-* KDE Plasma
-* AUR
-* Virtualisation Qemu/KVM
-* Parefeu
-* Gstreamer
-* 
-
----
-
-### Mise à jour du système
+### Mise à jour
 ```sh
 sudo pacman -Syyu bash-completion --noconfirm --needed
 ```
@@ -22,9 +10,8 @@ sudo pacman -Syyu bash-completion --noconfirm --needed
 sudo pacman -S reflector rsync --noconfirm --needed
 sudo reflector --sort rate --save /etc/pacman.d/mirrorlist --country France --protocol https --latest 5 --verbose
 ```
----
 
-### Installation de l'environnement GNOME
+### GNOME
 ```sh
 sudo pacman -S --noconfirm --needed \
 abiword \
@@ -54,8 +41,6 @@ vim
 ```sh
 sudo pacman -Rns --noconfirm evince sushi gnome-logs gnome-font-viewer snapshot decibels gnome-maps gnome-characters totem simple-scan
 ```
-
----
 
 ### KDE Plamsa
 ```sh
@@ -97,7 +82,6 @@ yakuake
 ```sh
 sudo systemctl enable --now sddm
 ```
----
 
 ### AUR
 ```sh
@@ -136,13 +120,13 @@ sudo pacman -S --noconfirm --needed noto-fonts ttf-bitstream-vera ttf-dejavu ttf
 sudo systemctl enable --now avahi-daemon avahi-dnsconfd bluetooth 
 ```
 
----
-
-## Créer une connexion par pont pour les VMs
+### Pont réseau VMs/Hosts
 ```sh
 sudo pacman -S --noconfirm --needed bridge-utils netctl
 sudo nano /etc/netctl/bridge
+```
 
+```txt
 Description="Bridge connection"
 Interface=br0
 Connection=bridge
