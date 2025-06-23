@@ -57,7 +57,9 @@ gwenview \
 kaccounts-integration \
 kaccounts-providers \
 kaddressbook \
+kate \
 kcalc \
+kdenlive \
 kdevelop-meta \
 kexi \
 kdepim-addons \
