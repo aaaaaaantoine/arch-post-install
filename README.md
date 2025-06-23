@@ -1,6 +1,7 @@
 ## Guide Arch Linux Post Install
 
-* Ceci me sert de mémo pour mes différentes machines/configurations. Prenez/modifiez ce qui peut vous servir.
+* Ce dépôt me sert de mémo pour mes différentes machines/configurations.
+* Prenez/modifiez ce qui peut vous servir.
 
 ### Mise à jour
 ```sh
