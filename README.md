@@ -1,5 +1,7 @@
 ## Guide Arch Linux Post Install
 
+* Ceci me sert de mémo pour mes différentes machines/configurations. Prenez/modifiez ce qui peut vous servir.
+
 ### Mise à jour
 ```sh
 sudo pacman -Syyu bash-completion --noconfirm --needed
