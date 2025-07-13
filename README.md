@@ -40,8 +40,9 @@ secrets \
 shortwave \
 vim 
 ```
+
 ```sh
-sudo pacman -Rns --noconfirm evince sushi gnome-logs gnome-font-viewer snapshot decibels gnome-maps gnome-characters totem simple-scan
+sudo systemctl enable --now gdm
 ```
 
 ### KDE Plasma
@@ -85,10 +86,6 @@ yakuake
 
 ```sh
 sudo systemctl enable --now sddm
-```
-
-```sh
-sudo systemctl enable --now gdm
 ```
 
 ### AUR
