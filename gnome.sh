@@ -30,7 +30,8 @@ kodi \
 papers \
 secrets \
 shortwave \
-vim 
+vim
+
 sudo systemctl enable --now gdm
 
 ### AUR
