@@ -18,7 +18,6 @@ celluloid \
 deja-dup \
 eartag \
 epiphany \
-fragments \
 gdm \
 geary \
 git \
@@ -33,7 +32,6 @@ gnome-contacts \
 gnome-control-center \
 gnome-disk-utility \
 gnome-keyring \
-gnome-maps \
 gnome-menus \
 gnome-music \
 gnome-podcasts \
