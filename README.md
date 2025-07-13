@@ -54,7 +54,7 @@ sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/aaaaaaantoine/arch-
 
 ---
 
-### Pont réseau pour vos VM avec netclt
+### Pont réseau pour vos VM avec netctl
 ```sh
 sudo pacman -S --noconfirm --needed bridge-utils netctl
 sudo nano /etc/netctl/bridge
