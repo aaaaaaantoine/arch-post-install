@@ -18,11 +18,11 @@ celluloid \
 deja-dup \
 eartag \
 epiphany \
+fragments \
 gdm \
 geary \
 git \
 gnome-backgrounds \
-gnome-builder \
 gnome-calculator \
 gnome-calendar \
 gnome-clocks \
