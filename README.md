@@ -1,131 +1,60 @@
-## Guide Arch Linux Post Install
+# Arch Linux Minimal Post-Install
 
-* Ce dépôt me sert de mémo pour mes différentes machines/configurations.
-* Prenez/modifiez ce qui peut vous servir.
+## Aperçu
 
-### Mise à jour + Installation de Bash Complétion
+* Ce dépôt contient plusieurs scripts bash simple pour installer des logiciels après une installation de [Archlinux](https://www.archlinux.org/) Minimal depuis le script d'installation fourni dans l'iso "Arch-Install".
+
+* **gnome.sh** pour un GNOME personnalisé.
+* **server.sh** pour un serveur de virtualisation prêt à l'emploi avec le WebUI Cockpit et Libvirt.
+
+<details closed><summary>Liste des paquets pour GNOME</summary>
+
+* Abiword
+* Alacarte
+* Celluloid
+* Deja-dup
+* Epiphany
+* Geary
+* Gnome Builder
+* Gnome Calendar
+* Gnome Console
+* Gnome Music
+* Gnucash
+* Gnumeric
+* Kodi
+* Secrets
+* shortwave
+* Ufw
+* Vim 
+
+</details>
+
+<details closed><summary>Liste des paquets pour Server</summary>
+
+* Cockpit
+* Libvirt
+* SSH
+* Rsync
+* Ufw
+* Vim
+
+</details>
+
+## Lancer le script
+
+* Bureau GNOME personnalisé.
 ```sh
-sudo pacman -Syyu bash-completion
+sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/aaaaaaantoine/arch-post-install/main/gnome.sh)" 
 ```
 
-### Reflector
+* Arch Server prêt à l'emploi.
 ```sh
-sudo pacman -S reflector rsync --noconfirm --needed
-sudo reflector --sort rate --save /etc/pacman.d/mirrorlist --country France --protocol https --latest 5 --verbose
+sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/aaaaaaantoine/arch-post-install/main/server.sh)" 
 ```
 
-### GNOME
-```sh
-sudo pacman -S --noconfirm --needed \
-abiword \
-alacarte \
-celluloid \
-deja-dup \
-eartag \
-epiphany \
-fragments \
-geary \
-gnome \
-gnome-builder \
-gnome-calendar \
-gnome-console \
-gnome-music \
-gnome-podcasts \
-gnucash \
-gnumeric \
-git \
-kodi \
-papers \
-secrets \
-shortwave \
-vim 
-```
+---
 
-```sh
-sudo systemctl enable --now gdm
-```
-
-### KDE Plasma
-```sh
-sudo pacman -S --noconfirm --needed \
-akregator \
-ark \
-calligra \
-dolphin \
-dragon \
-elisa \
-falkon \
-gwenview \
-kaccounts-integration \
-kaccounts-providers \
-kaddressbook \
-kate \
-kcalc \
-kdenlive \
-kdevelop-meta \
-kexi \
-kdepim-addons \
-kmail \
-kodi \
-korganizer \
-konsole \
-kontact \
-konversation \
-krdc \
-krita \
-ktorrent \
-libvncserver \
-partitionmanager \
-plasma \
-plasma-firewall \
-sddm \
-vim \
-virt-manager \
-yakuake
-```
-
-```sh
-sudo systemctl enable --now sddm
-```
-
-### AUR
-```sh
-sudo pacman -S --noconfirm --needed fakeroot gcc git make
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-```
-
-### Virtualisation Qemu/KVM
-```sh
-sudo pacman -S --noconfirm --needed dnsmasq libvirt openbsd-netcat qemu
-sudo systemctl enable --now libvirtd
-sudo usermod -a -G libvirt $USER
-```
-
-### Parefeu
-```sh
-sudo pacman -S --noconfirm --needed ufw
-sudo ufw allow ssh
-sudo ufw enable
-```
-
-### Gstreamer
-```sh
-sudo pacman -S --noconfirm --needed gst-plugins-{bad,base,good,ugly}
-```
-
-### Polices
-```sh
-sudo pacman -S --noconfirm --needed noto-fonts ttf-bitstream-vera ttf-dejavu ttf-liberation
-```
-
-### Services SystemD
-```sh
-sudo systemctl enable --now avahi-daemon avahi-dnsconfd bluetooth 
-```
-
-### Pont réseau VMs/Hosts
+### Pont réseau pour vos VM avec netclt
 ```sh
 sudo pacman -S --noconfirm --needed bridge-utils netctl
 sudo nano /etc/netctl/bridge
