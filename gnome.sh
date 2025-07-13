@@ -58,6 +58,7 @@ kodi \
 loupe \
 malcontent \
 nautilus \
+newsflash \
 papers \
 secrets \
 shortwave \
