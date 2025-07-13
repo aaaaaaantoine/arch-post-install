@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo pacman -Syyu --noconfirm --needed
+
 ### Bash Complétion
 sudo pacman -S --noconfirm --needed bash-completion
 
