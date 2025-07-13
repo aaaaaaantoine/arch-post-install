@@ -44,12 +44,12 @@
 
 * Bureau GNOME personnalisé.
 ```sh
-sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/aaaaaaantoine/arch-post-install/main/gnome.sh)" 
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/aaaaaaantoine/arch-post-install/main/gnome.sh)" 
 ```
 
 * Arch Server prêt à l'emploi.
 ```sh
-sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/aaaaaaantoine/arch-post-install/main/server.sh)" 
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/aaaaaaantoine/arch-post-install/main/server.sh)" 
 ```
 
 ---
