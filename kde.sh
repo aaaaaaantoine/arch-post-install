@@ -43,6 +43,7 @@ sddm \
 vim \
 virt-manager \
 yakuake
+
 sudo systemctl enable --now sddm
 
 ### AUR
