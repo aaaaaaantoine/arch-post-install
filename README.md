@@ -3,9 +3,9 @@
 * Ce dépôt me sert de mémo pour mes différentes machines/configurations.
 * Prenez/modifiez ce qui peut vous servir.
 
-### Mise à jour
+### Mise à jour + Installation de Bash Complétion
 ```sh
-sudo pacman -Syyu bash-completion --noconfirm --needed
+sudo pacman -Syyu bash-completion
 ```
 
 ### Reflector
@@ -20,7 +20,6 @@ sudo pacman -S --noconfirm --needed \
 abiword \
 alacarte \
 celluloid \
-curl \
 deja-dup \
 eartag \
 epiphany \
@@ -51,7 +50,6 @@ sudo pacman -S --noconfirm --needed \
 akregator \
 ark \
 calligra \
-curl \
 dolphin \
 dragon \
 elisa \
@@ -87,6 +85,10 @@ yakuake
 
 ```sh
 sudo systemctl enable --now sddm
+```
+
+```sh
+sudo systemctl enable --now gdm
 ```
 
 ### AUR
