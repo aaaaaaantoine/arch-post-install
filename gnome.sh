@@ -41,7 +41,7 @@ cd yay
 makepkg -si
 
 ### Virtualisation Qemu/KVM
-sudo pacman -S --noconfirm --needed dnsmasq libvirt openbsd-netcat qemu
+sudo pacman -S --noconfirm --needed dnsmasq libvirt openbsd-netcat qemu x11-ssh-askpass
 sudo systemctl enable --now libvirtd
 sudo usermod -a -G libvirt $USER
 
