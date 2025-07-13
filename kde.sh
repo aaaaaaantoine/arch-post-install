@@ -8,7 +8,7 @@ sudo pacman -S --noconfirm --needed reflector rsync
 sudo reflector --sort rate --save /etc/pacman.d/mirrorlist --country France --protocol https --latest 5 --verbose
 
 ### KDE Plasma
-sudo pacman -S --noconfirm --needed \
+sudo pacman -Syyu --noconfirm --needed \
 akregator \
 ark \
 calligra \
