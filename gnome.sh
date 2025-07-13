@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo pacman -Syyu --noconfirm --needed
+
 ### Installation de Bash Complétion
 sudo pacman -S --noconfirm --needed bash-completion
 
@@ -11,26 +13,62 @@ sudo reflector --sort rate --save /etc/pacman.d/mirrorlist --country France --pr
 sudo pacman -S --noconfirm --needed \
 abiword \
 alacarte \
+baobab \
 celluloid \
 deja-dup \
 eartag \
 epiphany \
 fragments \
+gdm \
 geary \
-gnome \
+git \
+gnome-backgrounds \
 gnome-builder \
+gnome-calculator \
 gnome-calendar \
+gnome-clocks \
+gnome-color-manager \
 gnome-console \
+gnome-contacts \
+gnome-control-center \
+gnome-disk-utility \
+gnome-keyring \
+gnome-maps \
+gnome-menus \
 gnome-music \
 gnome-podcasts \
+gnome-remote-desktop \
+gnome-session \
+gnome-settings-daemon \
+gnome-shell \
+gnome-shell-extensions \
+gnome-software \
+gnome-system-monitor \
+gnome-text-editor \
+gnome-tour \
+gnome-user-docs \
+gnome-user-share \
+gnome-weather \
+grilo-plugins \
 gnucash \
 gnumeric \
-git \
+gvfs \
+gvfs-mtp \
+gvfs-nfs \
+gvfs-smb \
 kodi \
+loupe \
+malcontent \
+nautilus \
 papers \
 secrets \
 shortwave \
-vim
+rygel \
+tecla \
+vim \
+xdg-desktop-portal-gnome \
+xdg-user-dirs-gtk \
+yelp
 
 sudo systemctl enable --now gdm
 
