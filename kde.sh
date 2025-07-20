@@ -59,6 +59,10 @@ sudo pacman -S --noconfirm --needed dnsmasq libvirt openbsd-netcat qemu x11-ssh-
 sudo systemctl enable --now libvirtd
 sudo usermod -a -G libvirt $USER
 
+### OpenSSH
+sudo pacman -S --noconfirm --needed openssh
+sudo systemctl enable --now sshd
+
 ### Parefeu
 sudo pacman -S --noconfirm --needed ufw
 sudo ufw allow ssh
