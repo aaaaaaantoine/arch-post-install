@@ -38,6 +38,7 @@ krdc \
 krita \
 ktorrent \
 libvncserver \
+okular \
 partitionmanager \
 plasma \
 plasma-firewall \
