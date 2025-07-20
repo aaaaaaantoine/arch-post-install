@@ -42,6 +42,11 @@
 
 ## Lancer le script
 
+* Bureau KDE personnalisé.
+```sh
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/aaaaaaantoine/arch-post-install/main/kde.sh)" 
+```
+
 * Bureau GNOME personnalisé.
 ```sh
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/aaaaaaantoine/arch-post-install/main/gnome.sh)" 
