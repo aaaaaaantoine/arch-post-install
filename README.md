@@ -54,25 +54,60 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/aaaaaaantoine/arch-post-
 
 ---
 
-### Pont réseau pour vos VM avec netctl
+### Pont réseau pour vos VM avec systemd-networkd
+1) Si vous utilisez un gestionnaire de réseau tel que Network Manager, désactiver le.
 ```sh
-sudo pacman -S --noconfirm --needed bridge-utils netctl
-sudo vim /etc/netctl/bridge
+sudo systemctl disable --now NetworkManager
 ```
 
-```txt
-Description="Bridge connection"
-Interface=br0
-Connection=bridge
-BindsToInterfaces=(enp1s0)
-MACAddress='52:54:00:a8:b9:6b'
-IP=static
-Address='192.168.1.31/24'
-Gateway='192.168.1.1'
-SkipForwardingDelay=yes
+2) Lancez le service systemd:
+```sh
+sudo systemctl enable systemd-networkd
+sudo systemctl start systemd-networkd
+```
+
+3) Fichiers de configuration:
+
+```sh
+# nano /etc/systemd/network/10-br0.netdev
+```
+```sh
+[NetDev]
+Name=br0
+Kind=bridge
+```
+```sh
+# nano /etc/systemd/network/10-br0.network
+```
+```sh
+[Match]
+Name=br0
+
+[Network]
+Address=192.168.1.50/24
+Gateway=192.168.1.1
+DNS=192.168.1.1
 ```
 
 ```sh
-sudo netctl enable bridge
-sudo netctl start bridge
+#nano /etc/systemd/network/20-eth0.network
+```
+
+```sh
+[Match]
+Name=enp1s0
+
+[Network]
+Bridge=br0
+```
+
+4) En fin, redémarrez le service:
+
+```sh
+sudo systemctl restart systemd-networkd
+```
+
+5) Vérifiez que la configuration fonctionne bien
+```sh
+networkctl status
 ```
