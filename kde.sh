@@ -46,8 +46,6 @@ vim \
 virt-manager \
 yakuake
 
-sudo systemctl enable --now sddm
-
 ### AUR
 sudo pacman -S --noconfirm --needed fakeroot gcc git make
 git clone https://aur.archlinux.org/yay.git
@@ -56,7 +54,6 @@ makepkg -si
 
 ### Virtualisation Qemu/KVM
 sudo pacman -S --noconfirm --needed dnsmasq libvirt openbsd-netcat qemu x11-ssh-askpass
-sudo systemctl enable --now libvirtd
 sudo usermod -a -G libvirt $USER
 
 ### OpenSSH
@@ -74,5 +71,5 @@ sudo pacman -S --noconfirm --needed gst-plugins-{bad,base,good,ugly}
 ### Polices
 sudo pacman -S --noconfirm --needed noto-fonts ttf-bitstream-vera ttf-dejavu ttf-liberation
 
-### Services SystemD
-sudo systemctl enable --now avahi-daemon avahi-dnsconfd bluetooth
+### Services
+sudo systemctl enable --now avahi-daemon avahi-dnsconfd bluetooth libvirtd sddm
