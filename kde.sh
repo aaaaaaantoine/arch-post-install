@@ -1,13 +1,14 @@
 #!/bin/bash
 
+### Reflector
+sudo pacman -Sy --noconfirm --needed reflector rsync
+sudo reflector --sort rate --save /etc/pacman.d/mirrorlist --country France --protocol https --latest 5 --verbose
+
+### Upgrade
 sudo pacman -Syyu --noconfirm --needed
 
-### Bash Complétion
+### Bash
 sudo pacman -S --noconfirm --needed bash-completion
-
-### Reflector
-sudo pacman -S --noconfirm --needed reflector rsync
-sudo reflector --sort rate --save /etc/pacman.d/mirrorlist --country France --protocol https --latest 5 --verbose
 
 ### KDE Plasma
 sudo pacman -Syyu --noconfirm --needed \
@@ -53,24 +54,28 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 
-### Virtualisation Qemu/KVM
+### Virtualization Qemu/KVM
 sudo pacman -S --noconfirm --needed dnsmasq libvirt openbsd-netcat qemu x11-ssh-askpass
-sudo usermod -a -G libvirt $USER
+sudo usermod -aG libvirt $USER
 
-### OpenSSH
+### Docker
+sudo pacman -S --noconfirm --needed docker
+sudo usermod -aG docker $USER
+
+### SSH
 sudo pacman -S --noconfirm --needed openssh
 sudo systemctl enable --now sshd
 
-### Parefeu
+### Firewall
 sudo pacman -S --noconfirm --needed ufw
-sudo ufw allow ssh
 sudo ufw enable
 
 ### Gstreamer
 sudo pacman -S --noconfirm --needed gst-plugins-{bad,base,good,ugly}
 
-### Polices
-sudo pacman -S --noconfirm --needed noto-fonts ttf-bitstream-vera ttf-dejavu ttf-liberation
+### Fonts
+sudo pacman -S ttf-bitstream-vera ttf-dejavu ttf-liberation
 
 ### Services
-sudo systemctl enable --now avahi-daemon avahi-dnsconfd bluetooth libvirtd sddm
+sudo systemctl enable --now avahi-daemon avahi-dnsconfd bluetooth docker libvirtd sddm
+exit 0
