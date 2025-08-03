@@ -1,20 +1,19 @@
 #!/bin/bash
 
-### Installation de Bash Complétion
+### Bash & Vim
 sudo pacman -S --noconfirm --needed bash-completion vim
 
 ### Reflector
 sudo pacman -S --noconfirm --needed reflector rsync
 sudo reflector --sort rate --save /etc/pacman.d/mirrorlist --country France --protocol https --latest 5 --verbose
 
-### Virtualisation Qemu/KVM
+### Virtualization Qemu/KVM
 sudo pacman -S --noconfirm --needed libvirt qemu
 sudo systemctl enable --now libvirtd
 sudo usermod -a -G libvirt $USER
 
-### Parefeu
+### Firewall
 sudo pacman -S --noconfirm --needed ufw
 sudo ufw allow ssh
 sudo ufw enable
-
 exit 0
