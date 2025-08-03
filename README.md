@@ -31,7 +31,6 @@
 
 <details closed><summary>Liste des paquets pour Server</summary>
 
-* Cockpit
 * Libvirt
 * SSH
 * Rsync
