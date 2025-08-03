@@ -10,7 +10,7 @@ sudo reflector --sort rate --save /etc/pacman.d/mirrorlist --country France --pr
 ### Virtualization Qemu/KVM
 sudo pacman -S --noconfirm --needed libvirt qemu
 sudo systemctl enable --now libvirtd
-sudo usermod -a -G libvirt $USER
+sudo usermod -aG libvirt $USER
 
 ### Firewall
 sudo pacman -S --noconfirm --needed ufw
