@@ -5,7 +5,7 @@
 * Ce dépôt contient plusieurs scripts bash simple pour installer des logiciels après une installation de [Archlinux](https://www.archlinux.org/) Minimal depuis le script d'installation fourni dans l'iso "Arch-Install".
 
 * **gnome.sh** pour un GNOME personnalisé.
-* **server.sh** pour un serveur de virtualisation prêt à l'emploi avec le WebUI Cockpit et Libvirt.
+* **server.sh** pour un serveur de virtualisation Qemu/KVM.
 
 <details closed><summary>Liste des paquets pour GNOME</summary>
 
